@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Ativo</title>
+    <link rel="stylesheet" href="CSS/style_index.css">
+</head>
+
+<body>
+    <div class="container" id="blur">
+        <div id="cabecalho">
+            <header>
+                <div id="logo">
+                    <a href="Index.html"><img src="imagens/logo.png" alt=""></a>
+                </div>
+                <div id="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="Cadastro.html" class="opcoes" target="_blank"> Cadastro</a></li>
+                            <li><a href="Vestuario.html" class="opcoes" target="_blank"> Produtos</a></li>
+                            <li><a href="#" class="opcoes" onclick="toggle()"> Fale Conosco</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="c-icon">
+                    <div id="barra">
+                        <input class="produtos" type="text" name="texto" placeholder="O que procura?">
+                        <a class="btn" href="#">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </a>
+                    </div>
+            </header>
+            <hr>
+            <div id="capa">
+                <a href="Produtos.html" target="_blank"><button>Comprar agora</button></a>
+                <h3 class="parte1">Atendimento de Segunda á Sexta</h3>
+                <h3 class="parte2">Das xxh às xxh</h3>
+            </div>
+        </div>
+        <div id="conteudo">
+            <section class="section1">
+                <div id="titulo">
+                    <h1>Sobre Nós</h1>
+                    <br><br>
+                </div>
+                <div id="texto">
+                    <div class="img">
+                        <img src="img/sobre_nos.jpg" alt="">
+                        <h3><br><br><b>Missão:
+                                <hr>
+                            </b>
+                            <p> Nossa missão é capacitar as pessoas a alcançarem seu máximo potencial através de roupas fitness de alta qualiddae, que combinam estilo, conforto e desempenho.</p>
+                            <p>Estamos comprometidos em promover um estilo de vida saldável e ativo, incentivando a confiança e a auto expressão de nossos clientes.</p>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="rodape">
+        <a href="https://instagram.com/nerdgoal/"> <img src="img/instagram_icon.png"></a>
+    
+        <a id="facebook" href="https://facebook.com"> <img src="img/face_icon.png" alt=""></a>
+
+        <a target="_blank" href=https://api.whatsapp.com/send/?phone=19971074991&amp;text&amp;type=phone_number&amp;app_absent=0"> <img src="img/whatsapp_icon.png" alt=""></a>
+
+
+        <h3>
+            © 2024 Estilo Ativo. Todos os direitos reservados.
+        </h3>
+    </div>
+    <div id="popup">
+        <div class="zap">
+            <br><br><br><br><br><br><br><br><br>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <h5>: (11)5196-9101</h5>
+        </div>
+        <div class="problema">
+            <h2>Como podemos te ajudar?</h2><br>
+            <form action="">
+                <textarea name="Descrição" placeholder="Digite Aqui seu problema:"></textarea><br><br>
+                <a href="#" onclick="toggle()"> Confirmar</a>
+                <a href="#" onclick="toggle()"> Cancelar</a>
+        </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Cadastro</title>
+    <link rel="stylesheet" href="CSS/style_cadastro.css">
+</head>
+<body>
+    <div class="container" id="blur">
+    <div id="cabecalho">
+        <header>
+            <div id="logo">
+                <a href="Index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="Index.html" class="opcoes"> Início</a></li>
+                        <li><a href="Vestuario.html" class="opcoes"> Produtos</a></li>
+                        <li><a href="#" class="opcoes" onclick="toggle()"> Fale Conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div id="tudo">
+        <form action="">
+            <h2 class="title">Faça seu Cadastro:</h2>
+    
+            <div class="input">
+                <input id="nome" type="text" name="nome" size="20" placeholder="Nome Completo" required>
+            </div>
+            <div class="input">
+                <input id="email" type="text" name="email" size="20" placeholder="Email"  required>
+            </div>
+            <div class="input">
+                <input id="senha" type="text" name="senha" maxlength="15" size="20" placeholder="Senha" required>
+            </div>
+            <div class="input">
+                <input id="cpf" type="text" name="cpf" maxlength="11" size="20" placeholder="CPF" required>
+            </div>
+            <div id="text">
+                <h3>Logar com</h3>
+                </div>
+                <br>
+            <div class="teste">
+                
+                <div id="sla">
+                <ion-icon name="logo-google"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+                </div>
+            <div class="content"><br><br>
+            
+                <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Cadastrar
+                </button>
+               
+            
+            
+            </div>
+        </form>
+    </div>
+</div>
+    </div>
+    <div id="popup">
+        <div class="zap">
+            <br><br><br><br><br><br><br><br><br>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <a id="zap_api" target="_blank" href=https://api.whatsapp.com/send/?phone=19971074991&amp;text&amp;type=phone_number&amp;app_absent=0"><h5>:Acesse aqui &emsp; &emsp;</h5></a>
+        <div class="problema">
+            <h2>Como podemos te ajudar?</h2><br>
+            <form action="">
+                <textarea name="Descrição" placeholder="Digite Aqui"></textarea><br><br>
+                <a href="#" onclick="toggle()"> Confirmar</a>
+                <a href="#" onclick="toggle()"> Cancelar</a>
+        </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+           
+        }
+        
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
